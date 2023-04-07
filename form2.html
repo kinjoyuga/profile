@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+        background-image: url("http://www.netyasun.com/home/bk-img/b095.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    </style>
+    <link rel="stylesheet" href="css/form2.css">
+    
+    <title>
+        アンケート
+    </title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="css/box_style.css">
+
+<body>
+    <div class="ank">
+        アンケート
+    </div>
+</body>
+
+<div class="box_a">
+         <p>Axizの研修をご利用いただき、誠にありがとうございます</p>
+         <p>以下の内容の記入及び送信をして頂けると幸いです。</p>
+        <form action="result.html">
+          <div class="form-group">
+              <label for="sha">会社名</label>
+            <input type="text" id="sha" name="sha" required>
+          </div>
+          <div class="form-group">
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="name" required>
+              <p>
+                <label>メールアドレス</label>
+              </p>
+            <label>
+              <span class="box_b">
+                <input type="radio" name="sei" value="men" checked>男
+              </span>
+            </label>
+            <label>
+              <span class="box_b">
+                <input type="radio" name="sei" value="women">女
+              </span>
+            </label>
+          </div>
+          <div class="form-group">
+            <p>
+              <label for="old">年齢</label>
+            </p>
+            <select id="old" name="old">
+              <option value="0">選択してください</option>
+              <option value="1" selected>１０代</option>
+              <option value="2">２０代</option>
+              <option value="3">３０代</option>
+              <option value="4">４０代</option>
+              <option value="5">５０代</option>
+              <option value="6">６０代</option>
+              <option value="7">７０代以上</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>
+              <label>今後見てみたいレシピ</label>
+            </p>
+            <label>
+              <span class="box_b">
+                <input type="checkbox" name="recipe" value="washoku">和食
+              </span>
+            </label>
+            <label>
+              <span class="box_b">
+                <input type="checkbox" name="recipe" value="tyuuka">中華
+              </span>
+            </label>
+            <label>
+              <span class="box_b">
+                <input type="checkbox" name="recipe" value="youshoku">洋食
+              </span>
+            </label>
+            <label>
+              <span class="box_b">
+                <input type="checkbox" name="recipe" value="italian">イタリアン
+              </span>
+            </label>
+            <label>
+              <span class="box_b">
+              <input type="checkbox" name="recipe" value="sweets">スイーツ
+              </span>
+            </label>
+            <label>
+              <span class="box_b">
+                <input type="checkbox" name="recipe" value="others">その他
+              </span>
+            </label>
+          </div>
+          <div class="form-group">
+            <p>
+              <label for="message">自由コメント欄</label>
+            </p>
+            <textarea id="message" name="message">自由に意見を記述してください</textarea>
+          </div>
+          <button type="submit">送信</button>
+          <button type="cancel">取り消し</button>
+        </form>
+    </body>
+</div>
+</html>
